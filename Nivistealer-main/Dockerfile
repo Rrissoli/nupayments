@@ -4,8 +4,6 @@ FROM python:3.8-slim
 # Defina o diretório de trabalho
 WORKDIR /app
 
-# Copie os arquivos de requisitos primeiro para aproveitar o cache da camada Docker
-COPY requirements.txt .
 
 # Instale as dependências
 RUN pip install colorama
